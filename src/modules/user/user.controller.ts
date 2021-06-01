@@ -12,7 +12,7 @@ export class UserController {
     constructor(private readonly _userService: UserService) {}
 
     @Get(':id')
-    //@Roles(RoleType.ADMIN, RoleType.AUTHOR)
+    //@Roles(RoleType.ADMINISTRATOR, RoleType.AUTHOR)
     //@UseGuards(AuthGuard(), RoleGuard)
     getUser(@Param('userId', ParseIntPipe) userId: number): Promise<ReadUserDto> {
         return this._userService.get(userId);

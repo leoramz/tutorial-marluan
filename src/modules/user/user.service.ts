@@ -1,9 +1,9 @@
 import { BadRequestException, Injectable, NotFoundException } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { Status } from 'src/shared/status.enum';
+import { Status } from '../../shared/status.enum';
 import { getConnection } from 'typeorm';
 import { Role } from '../role/role.entity';
-import { RoleRepository } from '../role/Role.repository';
+import { RoleRepository } from '../role/role.repository';
 import { RoleType } from '../role/roletype.enum';
 import { UserDetails } from './user.details.entity';
 import { User } from './user.entity';

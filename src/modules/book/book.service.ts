@@ -21,7 +21,7 @@ export class BookService {
     ) {}
 
     async get(bookId: number): Promise<ReadBookDto> {
-        if (bookId) {
+        if (!bookId) {
             throw new BadRequestException('User ID must be sent.');
         }
 

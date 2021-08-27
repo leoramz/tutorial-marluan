@@ -1,6 +1,6 @@
 import { IsNumber, IsString } from "class-validator";
 import { Exclude, Expose, Type } from 'class-transformer';
-import { ReadUserDto } from "src/modules/user/dto";
+import { ReadUserDto } from "../../user/dto";
 
 @Exclude()
 export class ReadBookDto {

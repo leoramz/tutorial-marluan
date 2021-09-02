@@ -11,7 +11,7 @@ export class UserService {
         private readonly _userRepository: UserRepository
     ) {}
 
-    async get(id: number): Promise<UserDto> {
+    async get(id: number): Promise<User> {
         if (!id) {
             throw new BadRequestException('Id must be sent.');
         }
